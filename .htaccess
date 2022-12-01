@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{HTTPS} off
+  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+  RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+  RewriteRule ^ /%1 [NC,L,R]
+
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+  ErrorDocument 404 https://florianmazelier.fr/erreurs/404/erreur-404.html
+</IfModule>
+
+<IfModule mod_expires.c>
+  <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|ttf|otf|svg)$">
+    ExpiresActive On
+    ExpiresDefault "access plus 1 year"
+  </FilesMatch>
+</IfModule>
