@@ -1,6 +1,6 @@
 // Lien vers site du développeur sur les pages d'accueil
 
-$('.developpeur span').click(function(){
+$('.developpeur span').click(function () {
   $('.developpeur').css('display', 'none');
 });
 
@@ -40,20 +40,20 @@ $('a').each(function () {
   if (location.hostname === this.hostname || !this.hostname.length) {
 
     var link = $(this).attr("href"),
-        bouton = $('.boutonPied');
+      bouton = $('.boutonPied');
 
     if (link.match("^#")) {
       // Ne fait rien
     } else if (link.match("^javascript")) {
       // Ne fait rien
     }
-      else {
-        $(this).click(function (e) {
-          e.preventDefault();
-          $('html').addClass('fadeSiteOut');
-          setTimeout(function () {
-            window.location = link;
-          }, 500);
+    else {
+      $(this).click(function (e) {
+        e.preventDefault();
+        $('html').addClass('fadeSiteOut');
+        setTimeout(function () {
+          window.location = link;
+        }, 500);
       });
     }
   }
@@ -112,6 +112,12 @@ $('.article a').click(function () {
   alert('Nous travaillons dur pour vous afficher au plus vite les dernières actualités liées au domaine hôtelier.');
 })
 
+const copyright = document.querySelector('.copyright h3');
+
+if (copyright) {
+  copyright.textContent = `${new Date().getFullYear()} ${copyright.textContent}`;
+}
+
 
 //  POP UP PUB
 
@@ -123,34 +129,39 @@ $('#pub span').click(function () {
 });
 
 //  CHRONO PUB
+const chrono = document.getElementById("chrono");
 
-// paramétrer la date butoire
-var countDownDate = new Date("Mar 15, 2020 15:30:00").getTime();
-
-
-var x = setInterval(function () { // mise a jour du compteur toutes les secondes
-
-
-  var now = new Date().getTime();  // paramétrer la date et l'heure actuelle
+if (chrono) {
+  // paramétrer la date butoire
+  const date = new Date();
+  date.setDate(date.getDate() + 2);
+  const countDownDate = date.getTime();
 
 
-  var distance = countDownDate - now; // Calculer la distance entre la date actuelle et la date de fin
+  var x = setInterval(function () { // mise a jour du compteur toutes les secondes
 
-  // Calcul du temps pour les jours, heures, minutes et secondes
 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var now = new Date().getTime();  // paramétrer la date et l'heure actuelle
 
-  // afficher le résultat dans l'élément avec l'id="chrono"
 
-  document.getElementById("chrono").innerHTML = days + "j " + hours + "h "
-    + minutes + "m " + seconds + "s ";
+    var distance = countDownDate - now; // Calculer la distance entre la date actuelle et la date de fin
 
-  // Afficher du texte quand le compte à rebours arrive à 0 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("chrono").innerHTML = "Temps écoulé";
-  }
-}, 1000); 
+    // Calcul du temps pour les jours, heures, minutes et secondes
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // afficher le résultat dans l'élément avec l'id="chrono"
+
+    document.getElementById("chrono").innerHTML = days + "j " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+
+    // Afficher du texte quand le compte à rebours arrive à 0 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("chrono").innerHTML = "Temps écoulé";
+    }
+  }, 1000);
+}
