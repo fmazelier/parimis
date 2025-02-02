@@ -26,7 +26,7 @@
     </script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Gamme Suite Hôtel Parimis 5 étoiles | Spa | Restaurant | À Paris</title>
+    <title>Chambres Hôtel Parimis 5 étoiles | Spa | Restaurant | À Paris</title>
     <!-- Lien favicon -->
     <link rel="shortcut icon" type="image/png" href="../images/favicon.png" />
     <!-- meta pour responsive sur mobile -->
@@ -59,10 +59,10 @@
                 <a href="#">FR</a> | <a href="#" class="anglais">EN</a>
             </div>
             <div class="logo">
-                <a href="accueil.html"><img src="../images/logo.png" alt="Logo hotel Parisis"></a>
+                <a href="accueil"><img src="../images/logo.png" alt="Logo hotel Parisis"></a>
             </div>
             <div class="panier">
-                <a href="panier.html">
+                <a href="panier">
                     <i class="fas fa-shopping-bag"></i> Panier
                 </a>
             </div>
@@ -71,7 +71,7 @@
         <!-- Nav Bar -->
 
         <nav class="navbar navbar-expand-lg sticky-top navbar-dark color-nav">
-            <a class="navbar-brand" href="reservation.html" style="color:#E0BB6D;border:1px solid #E0BB6D"
+            <a class="navbar-brand" href="reservation" style="color:#E0BB6D;border:1px solid #E0BB6D"
                 onmouseover="this.style.background='#E0BB6D';this.style.color='#26374D'"
                 onmouseout="this.style.background='#26374D';this.style.color='#E0BB6D';">
                 RÉSERVER</a>
@@ -89,13 +89,13 @@
                             L'HÔTEL
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="accueil.html">ACCUEIL</a>
-                            <a class="dropdown-item" href="qui.html">QUI SOMMES-NOUS ?</a>
-                            <a class="dropdown-item" href="acces.html">ACCÈS</a>
-                            <a class="dropdown-item" href="recrutement.html">RECRUTEMENT</a>
-                            <a class="dropdown-item" href="evenements.html">ÉVÈNEMENTS</a>
-                            <a class="dropdown-item" href="presse.html">PRESSE</a>
-                            <a class="dropdown-item" href="avis.html">AVIS</a>
+                            <a class="dropdown-item" href="accueil">ACCUEIL</a>
+                            <a class="dropdown-item" href="qui">QUI SOMMES-NOUS ?</a>
+                            <a class="dropdown-item" href="acces">ACCÈS</a>
+                            <a class="dropdown-item" href="recrutement">RECRUTEMENT</a>
+                            <a class="dropdown-item" href="evenements">ÉVÈNEMENTS</a>
+                            <a class="dropdown-item" href="presse">PRESSE</a>
+                            <a class="dropdown-item" href="avis">AVIS</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -106,30 +106,30 @@
                             CHAMBRES
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="all.html">VOIR TOUTES LES GAMMES</a>
-                            <a class="dropdown-item" href="classique.html">CLASSIQUE</a>
-                            <a class="dropdown-item" href="confort.html">CONFORT</a>
-                            <a class="dropdown-item" href="deluxe.html">DELUXE</a>
-                            <a class="dropdown-item" href="suite.html">SUITE</a>
+                            <a class="dropdown-item" href="all">VOIR TOUTES LES GAMMES</a>
+                            <a class="dropdown-item" href="classique">CLASSIQUE</a>
+                            <a class="dropdown-item" href="confort">CONFORT</a>
+                            <a class="dropdown-item" href="deluxe">DELUXE</a>
+                            <a class="dropdown-item" href="suite">SUITE</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="restaurant.html" style="color:white"
+                        <a class="nav-link" href="restaurant" style="color:white"
                             onmouseover="this.style.background='#26374D';this.style.color='#E0BB6D';"
                             onmouseout="this.style.background='#26374D';this.style.color='white';">RESTAURANT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="spa.html" style="color:white"
+                        <a class="nav-link" href="spa" style="color:white"
                             onmouseover="this.style.background='#26374D';this.style.color='#E0BB6D';"
                             onmouseout="this.style.background='#26374D';this.style.color='white';">SPA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="actualites.html" style="color:white"
+                        <a class="nav-link" href="actualites" style="color:white"
                             onmouseover="this.style.background='#26374D';this.style.color='#E0BB6D';"
                             onmouseout="this.style.background='#26374D';this.style.color='white';">ACTUALITÉS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html" style="color:white"
+                        <a class="nav-link" href="contact" style="color:white"
                             onmouseover="this.style.background='#26374D';this.style.color='#E0BB6D';"
                             onmouseout="this.style.background='#26374D';this.style.color='white';">CONTACT</a>
                     </li>
@@ -144,107 +144,125 @@
         </nav>
 
         <!-- Corps -->
+
+        <div id="pub">
+            <span><i class="fas fa-times"></i></span>
+            <div class="textePub">
+                <p>Profitez de 20% de réduction immédiate sur votre séjour à l'hôtel Parimis en réservant 5 nuits
+                    d'affilées ou plus pendant encore : </p>
+                <p id="chrono"></p>
+            </div>
+        </div>
+
         <div class="row">
-            <div class="col-10 offset-1 col-xl-8 offset-xl-2 introGammeChambre">
-                <h1 class="center">GAMME SUITE</h1>
-                <p>
-                    Situées au dernier étage avec une vue imprenable sur la Tour Eiffel et une terrasse privée de 40m²,
-                    nos Suites sont décorées dans le style des appartements privés parisiens avec un mobilier
-                    soigneusement choisi.
-                    Dans une atmosphère spécialement conçue et décorées d'oeuvres d'artistes contemporains du monde
-                    entier, nos suites vous offrent une aisance naturelle, un pied-à-terre idéal pour découvrir Paris !
+            <div class="col-12">
+                <img src="../images/bannierechambres.jpg" alt="chambre suite" class="img-fluid">
+            </div>
+        </div>
+        <div class="row hotel align-items-center">
+            <div class="col-lg-8 offset-lg-2">
+                <h1 class="titrePrincipalPremierePage">LES CHAMBRES</h1>
+                <p class="premierParagraphePage1">Spatieuses, calmes et avec une vue idyllique sur les plus beaux
+                    panoramas de Paris, nos chambres vous offriront
+                    entière satisfaction.</p>
+                <p>L'hôtel Parimis vous offre un large choix de sélection, allant de la gamme classique
+                    à la suite pour répondre à toutes vos envies et tous vos besoins.<br>
+                    Nous vous offrons le confort subtilement mélangé au luxe dans la capitale la plus belle du monde.
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center" style="margin-top: 20px;">
+            <div class="col-xl-6">
+
+                <div class="hovereffect">
+                    <img src="../images/chambres/classique/classicGrande.jpg" alt="Chambre Parimis classique"
+                        class="img-fluid">
+                    <div class="overlay">
+                        <a class="info" href="classique">Voir notre gamme Classique</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 details">
+                <h2>GAMME CLASSIQUE</h2>
+                <p>L'hôtel Parimis vous propose sa gamme Classique située du 1er au 2e étage, avec une vue sur l'avenue
+                    Montaigne ou le Grand Palais, cette gamme allie le charme du classicisme français et le design
+                    moderne. Elles ont tout d’une grande : mêmes finitions, même mobilier, une salle de bain avec douche
+                    à l’anglaise.</p>
+                <p class="prix">À partir de 900€/nuit</p>
+                <p class="boutonCorps">
+                    <a href="classique">VOIR LA GAMME</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-12 order-second col-xl-6 order-xl-first align-items-center details">
+                <h2>GAMME CONFORT</h2>
+                <p>Lhôtel Parimis vous propose sa gamme Confort située du 3e au 4e étage, avec une vue sur la Tour
+                    Eiffel, la chambre Confort opte pour la sobriété et le confort d'un mobilier contemporain. Fauteuils
+                    et canapés et un lit « king size » et 2 lits individuels, harmonie, luxe et perfection.
+                    En plein pied ou duplex, elle convient parfaitement pour accueillir une famille de 4 personnes.</p>
+                <p class="prix">À partir de 1400€/nuit</p>
+                <p class="boutonCorps">
+                    <a href="confort">VOIR LA GAMME</a>
+                </p>
+            </div>
+            <div class="col-12 order-first col-xl-6 order-xl-second">
+                <div class="hovereffect">
+                    <img src="../images/chambres/confort/confortGrande.jpg" alt="Chambre Parimis confort"
+                        class="img-fluid">
+                    <div class="overlay">
+                        <a class="info" href="confort">Voir notre gamme Confort</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-xl-6">
+                <div class="hovereffect">
+                    <img src="../images/chambres/deluxe/deluxeGrande.jpg" alt="Chambre Parimis deluxe"
+                        class="img-fluid">
+                    <div class="overlay">
+                        <a class="info" href="deluxe">Voir notre gamme Deluxe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 details">
+                <h2>GAMME DELUXE</h2>
+                <p>L'hôtel Parimis vous propose sa gamme Deluxe située au 5ème étage, avec vue sur la Tour Eiffel. La
+                    chambre Deluxe vous propose une atmosphère qui conjugue simplicité et raffinement dans une chambre à
+                    lit double "king size" de 4 lits individuels ainsi qu'une salle de bains contemporaine.
+                    Sa terrasse de 20m² offre un puit de lumières naturelle qui inondent le salon au rythme de la
+                    journée et des saisons, elle convient parfaitement pour accueillir 6 personnes.</p>
+                <p class="prix">À partir de 1900€/nuit</p>
+                <p class="boutonCorps">
+                    <a href="deluxe">VOIR LA GAMME</a>
                 </p>
             </div>
         </div>
         <div class="row align-items-center">
-            <div class="col-12 order-first col-xl-6 order-xl-first">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../images/chambres/suite/suite_1.jpg" class="d-block w-100"
-                                alt="Vue terrasse suite">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../images/chambres/suite/suite_2.jpg" class="d-block w-100"
-                                alt="vue chambre suite">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../images/chambres/suite/suite_3.jpg" class="d-block w-100"
-                                alt="vue salle de bain">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../images/chambres/suite/suite_4.jpg" class="d-block w-100" alt="vue salon suite">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../images/chambres/suite/suite_5.jpg" class="d-block w-100"
-                                alt="vue dressing suite">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 order-second col-xl-6 order-xl-second align-items-center details detailsGamme">
-                <h2>240m²</h2>
-                <ul>
-                    <li>Pour 8 personnes maximum : <br>
-                        1 lit king size, 4 lits individuels et 1 sofa convertible 2 personnes</li>
-                    <li>Couettes, draps et serviettes, peignoirs en coton bio, oreillers Ecolabel</li>
-                    <li>Plateau de courtoisie, eau minérale et bouteille de Champagne offerte</li>
-                    <li>Room service 24h/24 et 7j/7</li>
-                    <li>Pressing et chauffeur privé à disposition</li>
-                    <li>Accès illimité au SPA pour tous les occupants</li>
-                </ul>
-
+            <div class="col-12 order-second col-xl-6 order-xl-first details">
+                <h2>GAMME SUITE</h2>
+                <p>L'hôtel Parimis vous prpose sa gamme Suite située au dernier étage avec une vue imprenable sur la
+                    Tour Eiffel et une terrasse privée de 40m², nos Suites sont décorées dans le style des appartements
+                    privés parisiens avec un mobilier soigneusement choisi.
+                    Dans une atmosphère spécialement conçue et décorées d'oeuvres d'artistes contemporains du monde
+                    entier, nos suites vous offrent une aisance naturelle, un pied-à-terre idéal pour découvrir Paris !
+                </p>
                 <p class="prix">À partir de 2900€/nuit</p>
                 <p class="boutonCorps">
-                    <a href="reservation.html">RÉSERVER CETTE GAMME</a>
+                    <a href="suite">VOIR LA GAMME</a>
                 </p>
             </div>
-        </div>
-
-        <h1 class="titreVoirAussi">DECOUVREZ AUSSI :</h1>
-
-        <div class="voirAussi">
-            <div class="gamme">
-                <img src="../images/chambres/deluxe/deluxe_1.jpg" alt="chambre deluxe" class="miniature">
-                <h2 class="nomGamme">GAMME DELUXE</h2>
-                <p class="decriptifGamme">Située au 5ème étage, cette gamme vous offrira une vue splendide sur les plus
-                    beaux monuments de Paris en vous offrant confort et discrétion.</p>
-                <p class="boutonCorps center boutonVoirAussi">
-                    <a href="deluxe.html">VOIR LA GAMME</a>
-                </p>
-            </div>
-            <div class="gamme">
-                <img src="../images/chambres/confort/confort_1.jpg" alt="chambre Confort" class="miniature">
-                <h2 class="nomGamme">GAMME CONFORT</h2>
-                <p class="decriptifGamme">Située du 3e au 4e étage, avec une vue sur la Tour Eiffel, la chambre Confort
-                    opte pour la sobriété et le confort d'un mobilier contemporain.</p>
-                <p class="boutonCorps center boutonVoirAussi">
-                    <a href="confort.html">VOIR LA GAMME</a>
-                </p>
-            </div>
-            <div class="gamme">
-                <img src="../images/chambres/classique/classic_1.jpg" alt="chambre classique" class="miniature">
-                <h2 class="nomGamme">GAMME CLASSIQUE</h2>
-                <p class="decriptifGamme">Située du 1er au 2e étage, avec une vue sur l'avenue Montaigne ou le Grand
-                    Palais, cette chambre allie le charme du classicisme français et le design moderne.</p>
-                <p class="boutonCorps center boutonVoirAussi">
-                    <a href="classique.html">VOIR LA GAMME</a>
-                </p>
+            <div class="col-12 order-first col-xl-6 order-xl-second">
+                <div class="hovereffect">
+                    <img src="../images/chambres/suite/suiteGrande.jpg" alt="suite Parimis" class="img-fluid">
+                    <div class="overlay">
+                        <a class="info" href="suite">Voir notre gamme Suite</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -273,18 +291,18 @@
                     <i class="fas fa-map-marker-alt"></i> 1 Avenue Montaigne <br>
                     75008 Paris - France <br>
                     <i class="fas fa-phone-volume"> +33 (1) 23 45 67 89 </i><br>
-                    <i class="fas fa-map-marked-alt"></i><a href="acces.html"> Voir la page d'accès</a>
+                    <i class="fas fa-map-marked-alt"></i><a href="acces"> Voir la page d'accès</a>
                 </div>
                 <div class="mentions">
                     <h2>Liens utiles :</h2>
-                    <a href="mentions-legales.html">Mentions légales</a>
-                    <a href="conditions-ventes.html">CGV</a>
-                    <a href="plan-site.html">Plan du site</a>
+                    <a href="mentions-legales">Mentions légales</a>
+                    <a href="conditions-ventes">CGV</a>
+                    <a href="plan-site">Plan du site</a>
                     <span>
                         <i class="fas fa-print"></i>
                         <a href="javascript:window.print()"> Imprimer la page</a>
                     </span>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact">Contact</a>
                 </div>
             </div>
             <div class="copyright">
