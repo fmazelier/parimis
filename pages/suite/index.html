@@ -17,11 +17,12 @@
         _paq.push(['trackPageView']);
         _paq.push(['enableLinkTracking']);
         (function() {
-        var u="//matomo.florianmazelier.dev/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        var u="//stats.florianmazelier.fr/";
+        _paq.push(['setTrackerUrl', u+'api/collect']);
         _paq.push(['setSiteId', '2']);
+        _paq.push(['setRequestMethod', 'POST']);
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        g.async=true; g.src=u+'js/metrics.js'; s.parentNode.insertBefore(g,s);
         })();
     </script>
     <meta charset="utf-8" />
